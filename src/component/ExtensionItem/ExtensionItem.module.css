@@ -1,0 +1,57 @@
+.card {
+  background-color: #1F2535;
+  border-radius: 18px;
+  padding: 18px 20px;
+  max-width: 344px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 38px;
+}
+
+.imageTextContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+}
+
+.title {
+  color: #FAFDFF;
+  margin-bottom: 10px;
+}
+
+.desctiption {
+  color: #fafdffad;
+  max-width: 210px;
+  font-size: 14px;
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border: 1px solid #FAFDFF;
+  color: #FAFDFF;
+  font-family: inherit;
+  padding: 14px 16px;
+  border-radius: 50px;
+  transition: border-color .3s ease, background-color .3s ease, color .3s ease;
+
+  &:hover {
+    border-color: #F15D53;
+  }
+
+  &:focus {
+    background-color: #F15D53;
+    color: #08001B
+  }
+}

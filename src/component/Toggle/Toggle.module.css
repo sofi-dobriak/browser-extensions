@@ -1,0 +1,40 @@
+.toggleContainer {
+  display: inline-block;
+  position: relative;
+}
+
+.toggleInput {
+  display: none;
+}
+
+.toggleLabel {
+  width: 46px;
+  height: 25px;
+  background: #ccc;
+  border-radius: 50px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggleLabel::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  transition: left 0.3s;
+}
+
+.on {
+  background: #F15D53;
+}
+
+.on::after {
+  left: 24px;
+}

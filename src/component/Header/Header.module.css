@@ -1,0 +1,52 @@
+.headerBackdrop {
+  background-color: #1F2535;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconTitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  color: #F15D53;
+  font-size: 36px;
+}
+
+.headerTitle {
+  color: #FAFDFF;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.buttonTheme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2F354B;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: border-color .3s ease, background-color .3s ease;
+
+  &:hover {
+    border-color: #F15D53
+  }
+
+  &:focus {
+    background-color: #F15D53;
+  }
+}
+
+.buttonThemeIcon {
+  color: #EEF4FE;
+  font-size: 36px;
+}

@@ -1,0 +1,32 @@
+.extesionsListTitle {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.extesionsButtonList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.extesionsButton {
+  font-family: inherit;
+  background-color: #2F354B;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  color: #FAFDFF;
+  padding: 10px 18px;
+  transition: border-color .3s ease, background-color .3s ease, color .3s ease;
+
+  &:hover {
+    border-color: #F15D53;
+  }
+
+  &:focus {
+    background-color: #F15D53;
+    color: #08001B
+  }
+}
