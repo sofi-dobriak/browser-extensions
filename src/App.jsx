@@ -1,4 +1,3 @@
-import './App.css';
 import Container from './component/Container/Container';
 import Header from './component/Header/Header';
 import FilterList from './component/FilterList/FilterList';
