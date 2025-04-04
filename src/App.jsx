@@ -16,17 +16,17 @@ function App() {
     };
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem('theme') || 'dark';
-        setTheme(savedTheme);
-        setIsThemeLoaded(true);
-    }, []);
-
-    useEffect(() => {
         if (theme) {
             document.documentElement.setAttribute('data-theme', theme);
             localStorage.setItem('theme', theme);
         }
     }, [theme]);
+
+    useEffect(() => {
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        setTheme(savedTheme);
+        setIsThemeLoaded(true);
+    }, []);
 
     const toggleActiveState = id => {
         setAllExtensions(prevExtensions =>
@@ -49,9 +49,7 @@ function App() {
     };
 
     const deleteExtension = id => {
-        setAllExtensions(prevExt => {
-            return prevExt.filter(ext => ext.id !== id);
-        });
+        setAllExtensions(prevExtension => prevExtension.filter(extentions => extentions.id !== id));
     };
 
     return (
