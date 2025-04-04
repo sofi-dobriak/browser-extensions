@@ -10,7 +10,7 @@
 .toggleLabel {
   width: 46px;
   height: 25px;
-  background: #ccc;
+  background: var(--toggle-bg-color);
   border-radius: 50px;
   display: block;
   position: relative;
@@ -22,7 +22,7 @@
   content: "";
   width: 20px;
   height: 20px;
-  background: white;
+  background: var(--toggle-after-bg);
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -32,7 +32,7 @@
 }
 
 .on {
-  background: #F15D53;
+  background: var(--focus-bg-button);
 }
 
 .on::after {

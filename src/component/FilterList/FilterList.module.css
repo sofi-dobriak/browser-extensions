@@ -1,5 +1,5 @@
 .extesionsListTitle {
-  color: #fff;
+  color: var(--text-color);
   text-align: center;
   margin-bottom: 28px;
 }
@@ -14,19 +14,19 @@
 
 .extesionsButton {
   font-family: inherit;
-  background-color: #2F354B;
+  background-color: var(--extension-button-bg);
   border: 1px solid transparent;
   border-radius: 50px;
-  color: #FAFDFF;
+  color: var(--extension-button-text-color);
   padding: 10px 18px;
   transition: border-color .3s ease, background-color .3s ease, color .3s ease;
 
   &:hover {
-    border-color: #F15D53;
+    border-color: var(--hover-border--color);
   }
 
   &:focus {
-    background-color: #F15D53;
-    color: #08001B
+    background-color: var(--focus-bg-button);
+    color: var(--focus-button-text-color)
   }
 }

@@ -2,15 +2,19 @@ import styles from './Header.module.css';
 import { IoExtensionPuzzleOutline } from 'react-icons/io5';
 import { IoSunnyOutline, IoMoonOutline } from 'react-icons/io5';
 
-const Header = () => {
+const Header = ({ toggleTheme, theme }) => {
     return (
         <div className={styles.headerBackdrop}>
             <div className={styles.iconTitleContainer}>
                 <IoExtensionPuzzleOutline className={styles.icon} />
                 <p className={styles.headerTitle}>Extensions</p>
             </div>
-            <button className={styles.buttonTheme}>
-                <IoSunnyOutline className={styles.buttonThemeIcon} />
+            <button onClick={toggleTheme} className={styles.buttonTheme}>
+                {theme === 'dark' ? (
+                    <IoSunnyOutline className={styles.buttonThemeIcon} />
+                ) : (
+                    <IoMoonOutline className={styles.buttonThemeIcon} />
+                )}
             </button>
         </div>
     );

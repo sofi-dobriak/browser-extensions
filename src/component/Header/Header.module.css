@@ -1,5 +1,5 @@
 .headerBackdrop {
-  background-color: #1F2535;
+  background-color: var(--bg-card);
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 44px;
@@ -17,12 +17,12 @@
 }
 
 .icon {
-  color: #F15D53;
+  color: var(--icon-color-title);
   font-size: 36px;
 }
 
 .headerTitle {
-  color: #FAFDFF;
+  color: var(--text-color);
   font-size: 24px;
   font-weight: 600;
 }
@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2F354B;
+  background-color: var(--theme-button-bg);
   border: 1px solid transparent;
   border-radius: 10px;
   padding: 10px;
@@ -39,15 +39,15 @@
   transition: border-color .3s ease, background-color .3s ease;
 
   &:hover {
-    border-color: #F15D53
+    border-color: var(--hover-border-color)
   }
 
   &:focus {
-    background-color: #F15D53;
+    background-color: var(--focus-bg-button);
   }
 }
 
 .buttonThemeIcon {
-  color: #EEF4FE;
+  color: var(--icon-color-button);
   font-size: 36px;
 }

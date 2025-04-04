@@ -1,7 +1,34 @@
 @import './reset.css';
 
+:root {
+  --background-color: linear-gradient(180deg, #040918, #091540);
+  --bg-card: #1F2535;
+
+  --text-color: #FAFDFF;
+  --text-desc-color: #fafdffad;
+
+  --extension-button-bg: #2F354B;
+  --extension-button-text-color: #FAFDFF;
+  --button-background: transparent;
+  --button-text-color: #FAFDFF;
+  --delete-button-border: #FAFDFF;
+
+  --hover-border-color: #F15D53;
+  --focus-bg-button: #F15D53;
+  --focus-button-text-color: #08001B;
+
+  --icon-color-title: #F15D53;
+  --icon-color-button: #EEF4FE;
+
+  --toggle-bg-color: #ccc;
+  --toggle-after-bg: #fff;
+
+  --theme-button-bg: #2F354B;
+}
+
 * {
   box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
@@ -9,9 +36,30 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  background: linear-gradient(180deg, #040918, #091540);
-  background-size: cover;
+  background: var(--background-color);
   min-height: 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+[data-theme='light'] {
+
+  --background-color: linear-gradient(180deg, #EBF2FC, #EEF8F9);
+  --bg-card: #FCFDFF;
+
+  --text-color: #0F152B;
+  --text-desc-color: #C5C6C8;
+  --extension-button-text-color: #0F152B;
+
+  --extension-button-bg: #FCFDFF;
+  --button-text-color: #0F152B;
+  --delete-button-border: #C5C6C8;
+
+  --focus-button-text-color: #FFF9F1;
+
+  --icon-color-button: #000019;
+
+  --theme-button-bg: #EBEFEE;
+
 }

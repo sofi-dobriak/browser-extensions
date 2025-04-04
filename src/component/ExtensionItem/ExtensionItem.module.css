@@ -1,5 +1,5 @@
 .card {
-  background-color: #1F2535;
+  background-color: var(--bg-card);
   border-radius: 18px;
   padding: 18px 20px;
   max-width: 344px;
@@ -21,12 +21,12 @@
 }
 
 .title {
-  color: #FAFDFF;
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
 .desctiption {
-  color: #fafdffad;
+  color: var(--text-desc-color);
   max-width: 210px;
   font-size: 14px;
 }
@@ -39,19 +39,19 @@
 
 .deleteButton {
   background-color: transparent;
-  border: 1px solid #FAFDFF;
-  color: #FAFDFF;
+  border: 1px solid var(--delete-button-border);
+  color: var(--button-text-color);
   font-family: inherit;
   padding: 14px 16px;
   border-radius: 50px;
   transition: border-color .3s ease, background-color .3s ease, color .3s ease;
 
   &:hover {
-    border-color: #F15D53;
+    border-color: var(--hover-border-color);
   }
 
   &:focus {
-    background-color: #F15D53;
-    color: #08001B
+    background-color: var(--focus-bg-button);
+    color: var(--focus-button-text-color)
   }
 }
