@@ -2,7 +2,7 @@ import Container from './component/Container/Container';
 import Header from './component/Header/Header';
 import FilterList from './component/FilterList/FilterList';
 import ExtensionsList from './component/ExtensionsList/ExtensionsList';
-import data from './assets/datas/data.json';
+import data from './assets/data.json';
 import { useEffect, useState } from 'react';
 
 function App() {
